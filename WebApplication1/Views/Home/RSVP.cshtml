@@ -1,0 +1,25 @@
+﻿@model WebApplication1.Models.orderResponse
+@{
+    //Layout = null;
+    ViewBag.Title = "Order";
+}
+
+
+
+
+    <div>
+        <h2>Your Order:</h2>
+        @using (Html.BeginForm())
+        {
+           
+
+            <p>Name: @Html.TextBox("Name")</p>
+            <p>Pizza: @Html.TextBox("Pizza")</p>
+            <p>Drink: @Html.TextBox("Drink")</p>
+            <p>Snack: @Html.TextBox("Snack")</p>
+
+            <input type="submit" value="Place Order" />
+
+        }
+    </div>
+
